@@ -1,0 +1,74 @@
+NPC Script error with NPC 2023000: 
+ java.lang.reflect.UndeclaredThrowableException
+	at $Proxy3.action(Unknown Source)
+	at scripting.npc.NPCScriptManager.action(NPCScriptManager.java:97)
+	at net.channel.handler.NPCMoreTalkHandler.handlePacket(NPCMoreTalkHandler.java:71)
+	at net.MapleServerHandler.messageReceived(MapleServerHandler.java:119)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$TailFilter.messageReceived(DefaultIoFilterChain.java:716)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:434)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:46)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:796)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter$ProtocolDecoderOutputImpl.flush(ProtocolCodecFilter.java:427)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter.messageReceived(ProtocolCodecFilter.java:245)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:434)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:46)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:796)
+	at org.apache.mina.core.filterchain.IoFilterAdapter.messageReceived(IoFilterAdapter.java:119)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:434)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.fireMessageReceived(DefaultIoFilterChain.java:426)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:715)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:668)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:657)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1141)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.security.PrivilegedActionException: javax.script.ScriptException: sun.org.mozilla.javascript.internal.EvaluatorException: Can't find method scripting.AbstractPlayerInteraction.warp(sun.org.mozilla.javascript.internal.Undefined). (<Unknown source>#61) in <Unknown source> at line number 61
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.script.util.InterfaceImplementor$InterfaceImplementorInvocationHandler.invoke(Unknown Source)
+	... 25 more
+Caused by: javax.script.ScriptException: sun.org.mozilla.javascript.internal.EvaluatorException: Can't find method scripting.AbstractPlayerInteraction.warp(sun.org.mozilla.javascript.internal.Undefined). (<Unknown source>#61) in <Unknown source> at line number 61
+	at com.sun.script.javascript.RhinoScriptEngine.invoke(Unknown Source)
+	at com.sun.script.javascript.RhinoScriptEngine.invokeFunction(Unknown Source)
+	at com.sun.script.util.InterfaceImplementor$InterfaceImplementorInvocationHandler$1.run(Unknown Source)
+	... 27 more
+
+NPC Script error with NPC 2023000: 
+ java.lang.reflect.UndeclaredThrowableException
+	at $Proxy3.action(Unknown Source)
+	at scripting.npc.NPCScriptManager.action(NPCScriptManager.java:97)
+	at net.channel.handler.NPCMoreTalkHandler.handlePacket(NPCMoreTalkHandler.java:71)
+	at net.MapleServerHandler.messageReceived(MapleServerHandler.java:119)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$TailFilter.messageReceived(DefaultIoFilterChain.java:716)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:434)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:46)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:796)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter$ProtocolDecoderOutputImpl.flush(ProtocolCodecFilter.java:427)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter.messageReceived(ProtocolCodecFilter.java:245)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:434)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:46)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:796)
+	at org.apache.mina.core.filterchain.IoFilterAdapter.messageReceived(IoFilterAdapter.java:119)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:434)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.fireMessageReceived(DefaultIoFilterChain.java:426)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:715)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:668)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:657)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1141)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.security.PrivilegedActionException: javax.script.ScriptException: sun.org.mozilla.javascript.internal.EvaluatorException: Can't find method scripting.AbstractPlayerInteraction.warp(sun.org.mozilla.javascript.internal.Undefined). (<Unknown source>#61) in <Unknown source> at line number 61
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.script.util.InterfaceImplementor$InterfaceImplementorInvocationHandler.invoke(Unknown Source)
+	... 25 more
+Caused by: javax.script.ScriptException: sun.org.mozilla.javascript.internal.EvaluatorException: Can't find method scripting.AbstractPlayerInteraction.warp(sun.org.mozilla.javascript.internal.Undefined). (<Unknown source>#61) in <Unknown source> at line number 61
+	at com.sun.script.javascript.RhinoScriptEngine.invoke(Unknown Source)
+	at com.sun.script.javascript.RhinoScriptEngine.invokeFunction(Unknown Source)
+	at com.sun.script.util.InterfaceImplementor$InterfaceImplementorInvocationHandler$1.run(Unknown Source)
+	... 27 more
+
